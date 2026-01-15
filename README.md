@@ -110,7 +110,24 @@ General error message:
   means something goes wrong, contact technology support.
 
 
+```go
+    // get user bet logs
+    /**
+    type GetUserBetLogsQuery struct {
+        StartTime string // Start Time, format: "YYYY-MM-DD HH:ii:ss"
+        EndTime   string // End Time, format: "YYYY-MM-DD HH:ii:ss"
+        Page      uint32 // Page id, from 0 to 100, default 0
+        Count     uint32 // Count of per page, default 20, can not be 0, and cant larger than 100
+    }
+     */
+    GetUserBetLogs(_mobile string, _queryOpt GetUserRechargeLogsQuery)
+```
+> Possible Resp:
+- None
+
+General error message:
+- Code: 40000, Msg: system_error
+  means something goes wrong, contact technology support.
+
+
 All Done, Good Job!!
-
-
-
